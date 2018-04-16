@@ -1,0 +1,32 @@
+<templateSet group="build.gradle">
+  <template name="gson" value="compile &quot;com.google.code.gson:gson:2.8.1&quot;&#10;" description="gson dependency string" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+    </context>
+  </template>
+  <template name="kotson" value="compile &quot;com.github.salomonbrys.kotson:kotson:2.5.0&quot;&#10;" description="kotson dependency string" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+    </context>
+  </template>
+  <template name="fatjar" value="jar {&#10;    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }&#10;}" description="jar task for building fat-jar" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+    </context>
+  </template>
+  <template name="appengineclasspath" value="classpath &quot;com.google.appengine:gradle-appengine-plugin:1.9.59&quot;&#10;" description="class path for appengine plugin" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+    </context>
+  </template>
+  <template name="kotlinclasspath" value="classpath &quot;org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version&quot;&#10;&#10;" description="class path for kotlin plugin" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+    </context>
+  </template>
+  <template name="versionsplugin" value="  id &quot;com.github.ben-manes.versions&quot; version &quot;0.17.0&quot;&#10;" description="plugin declaration for ben manes versions" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+    </context>
+  </template>
+</templateSet>
