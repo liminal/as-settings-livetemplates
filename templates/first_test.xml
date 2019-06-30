@@ -1,7 +1,0 @@
-<templateSet group="first_test">
-  <template name="foo" value="Bandam" description="foo example" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="GROOVY" value="true" />
-    </context>
-  </template>
-</templateSet>

@@ -1,0 +1,11 @@
+<templateSet group="shared: java">
+    <template name="slog"
+              value="private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger($CLASS_NAME$.class);&#10;"
+              description="" toReformat="true" toShortenFQNames="true">
+        <variable name="CLASS_NAME" expression="className" defaultValue="" alwaysStopAt="false"/>
+        <context>
+            <option name="GROOVY_DECLARATION" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
+        </context>
+    </template>
+</templateSet>
